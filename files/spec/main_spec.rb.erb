@@ -1,0 +1,9 @@
+describe "<%= class_name = name.split(/[-_]/).map{ |x| x.capitalize } %>" do
+  before do
+    @object = <%= class_name %>.new
+  end
+
+  it "should be instance of '<%= class_name %>'" do
+    @object.should.be.instance_of <%= class_name %>
+  end
+end
